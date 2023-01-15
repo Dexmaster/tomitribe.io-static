@@ -47,6 +47,10 @@
                 document.body.append(script);
             });
         };
+    if (location.search.length > 2) {
+        const newPath = decodeURIComponent(location.search).replace(/^\??\/?/, '');
+        history.replaceState(null, '', newPath);
+    }
     window.addEventListener('DOMContentLoaded',async (event) => {
         await ["app/third-party/source.js", "app/js/app.min.js"].reduce(async (acc, url) => {
             await acc;
