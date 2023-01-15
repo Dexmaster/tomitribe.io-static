@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "npm ci --prefix generation && npm ci --prefix renderer",
     "build:webapp": "npm run build --prefix generation",
+    "build:sitemap": "npm run sitemap --prefix generation",
     "build:static": "npm run build --prefix renderer",
     "serve:webapp": "npm run serve-webapp --prefix renderer",
     "serve:static": "npm run serve-static --prefix renderer",

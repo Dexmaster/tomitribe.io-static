@@ -28,6 +28,9 @@ npm run push:gh-pages-webapp
 npm run serve:webapp
 # static serve (needs build:static run once)
 npm run serve:static
+
+# Generate sitemaps(optional):
+npm run build:sitemap
 ```
 
 == What this project does
